@@ -34,23 +34,23 @@
                     <div class="main-conatiner">
                         <div class="main-content1">
                             Monthly Income 
-                            <div class="amount">${{income}}</div>
+                            <div class="amount">$ {{income}}</div>
                             <div class="slidecontainer">
                                 <input type="range" min="{{minVal}}" max="{{maxVal}}" value="{{defaultVal}}" [(ngModel)]="income">
                                 <div class="range-sub">
-                                    <div>{{minVal}}</div>
-                                    <div> {{maxVal}}</div>
+                                    <div>$ {{minVal}}</div>
+                                    <div>$ {{maxVal}}</div>
                                 </div>
                             </div> 
                         </div>
                         <div class="main-content1">
                             Monthly expense
-                            <div class="amount">${{expense}}</div>
+                            <div class="amount">$ {{expense}}</div>
                             <div class="slidecontainer">
                                 <input type="range" min="{{minVal}}" max="{{maxVal}}" value="{{defaultVal}}" [(ngModel)]="expense">
                                 <div class="range-sub">
-                                    <div>{{minVal}}</div>
-                                    <div> {{maxVal}}</div>
+                                    <div>$ {{minVal}}</div>
+                                    <div>$ {{maxVal}}</div>
                                 </div>
                             </div>                              
                         </div>
