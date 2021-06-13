@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardLandingComponent } from './dashboard/dashboard-landing/dashboard-landing.component';
+import { DashboardLandingComponent } from './dashboard-landing/dashboard-landing.component';
 
 const routes: Routes = [
   {
