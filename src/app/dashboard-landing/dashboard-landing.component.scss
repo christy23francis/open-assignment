@@ -132,6 +132,12 @@
                             }
                             .slidecontainer {
                                 width: 100%;
+                                .range-sub {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    font-size: 8px;
+                                    color: #222222;
+                                }
                                 input {
                                     width: 100%;
                                 }

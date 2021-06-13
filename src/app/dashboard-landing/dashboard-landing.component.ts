@@ -7,6 +7,10 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class DashboardLandingComponent implements OnInit {
   income: any;
+  expense: any;
+  minVal: any;
+  maxVal: any;
+  defaultVal: any;
   isScrolled = false;
   @HostListener('window:scroll', ['$event']) onScrollEvent($event: any){
     if (window.scrollY > 120) {
@@ -16,7 +20,13 @@ export class DashboardLandingComponent implements OnInit {
     }
   } 
 
-  constructor() { }
+  constructor() {
+    this.minVal = 100000;
+    this.maxVal = 300000;
+    this.defaultVal = 10000;
+    this.income = this.defaultVal;
+    this.expense = this.defaultVal;
+  }
 
   ngOnInit(): void {
   }
